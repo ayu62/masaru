@@ -1,0 +1,91 @@
+/* 共通のCSS設定 */
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+/* ナビの部分 */
+.navi {
+    position: relative;
+    height: 10vh;
+    width: 100vw;
+    margin-bottom: 5vh;
+    z-index: 9999;
+}
+.naviMenu {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border: 1px solid gray;
+}
+/*  */
+.logoDiv {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*  */
+.humberMenu {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+}
+.subMenu {
+    display: none;
+    height: 120px;
+    width: 100px;
+}
+.humberMenu:hover .subMenu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.subMenu li {
+    height: 20px;
+    width: 100px;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    transition: 1s;
+}
+.subMenu li:hover {
+    background-color: navy;
+    color: white;
+}
+/* ボタン */
+.aButton {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 50px;
+    background-color:azure;
+    text-align: center;
+    line-height: 30px;
+}
+/* 標題 */
+.textTitle {
+    width: 100vw;
+    line-height: 50px;
+    background-color: azure;
+    position: relative;
+    padding-left: 15px;
+}
+.textTitle::before{
+    content: "";
+    background-color: navy;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+}
